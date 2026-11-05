@@ -535,6 +535,9 @@ static const Rule rules[] = {
 	RULE(.class = "Thunar", .title = "Rename", .isfloating = 1)
 	RULE(.class = "mpv", .isfloating = 1)
 	RULE(.class = "xarchiver", .isfloating = 1)
+	#if SWALLOW_PATCH
+	RULE(.class = "st-256color", .isterminal = 1, .noswallow = 0)
+	#endif // SWALLOW_PATCH
 	#if RENAMED_SCRATCHPADS_PATCH && SWALLOW_PATCH
 	RULE(.instance = "spterm", .scratchkey = 's', .isfloating = 1, .isterminal = 1, .noswallow = 0)
 	#elif RENAMED_SCRATCHPADS_PATCH
