@@ -471,7 +471,7 @@
  * This patch interferes with the center transient windows patches.
  * https://dwm.suckless.org/patches/alwayscenter/
  */
-#define ALWAYSCENTER_PATCH 1
+#define ALWAYSCENTER_PATCH 0
 
 /* Allows for floating windows to be toggled to be always on top (aot).
  *
@@ -1101,6 +1101,10 @@
  * https://dwm.suckless.org/patches/save_floats/
  */
 #define SAVEFLOATS_PATCH 1
+
+/* Saves floats on creation. Depends on savefloats.
+ */
+#define SAVEFLOATS_ONCREATE_PATCH 1
 
 /* Default behaviour is floating from top-left corner. This patch allows you to center
  * clients just before togglefloating() ends.
