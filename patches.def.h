@@ -1081,6 +1081,10 @@
  */
 #define SAVEFLOATS_PATCH 0
 
+/* Saves floats on creation. Depends on savefloats.
+ */
+#define SAVEFLOATS_ONCREATE_PATCH 0
+
 /* The scratchpad patch allows you to spawn or restore floating terminal windows.
  * It is typically useful when one need to do some short typing.
  *

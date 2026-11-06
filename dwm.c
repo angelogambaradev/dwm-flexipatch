@@ -2588,7 +2588,12 @@ manage(Window w, XWindowAttributes *wa)
 	c->pid = winpid(w);
 	#endif // SWALLOW_PATCH
 	/* geometry */
-	#if SAVEFLOATS_PATCH || EXRESIZE_PATCH
+	#if SAVEFLOATS_ONCREATE_PATCH
+	c->sfx = wa->x;
+	c->sfy = wa->y;
+	c->sfw = wa->width; 
+	c->sfh = wa->height; 
+	#elif SAVEFLOATS_PATCH || EXRESIZE_PATCH
 	c->sfx = c->sfy = c->sfw = c->sfh = -9999;
 	#endif // SAVEFLOATS_PATCH | EXRESIZE_PATCH
 	c->x = c->oldx = wa->x;
