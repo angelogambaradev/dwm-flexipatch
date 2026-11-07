@@ -32,7 +32,7 @@ FREETYPEINC = /usr/include/freetype2
 #XRENDER = -lXrender
 
 # Uncomment this for the mdpcontrol patch / MDPCONTROL_PATCH
-#MPDCLIENT = -lmpdclient
+MPDCLIENT = -lmpdclient
 
 # Uncomment for the pango patch / BAR_PANGO_PATCH
 #PANGOINC = `pkg-config --cflags xft pango pangoxft`
@@ -46,7 +46,7 @@ FREETYPEINC = /usr/include/freetype2
 #XEXTLIB = -lXext
 
 # Uncomment this for the swallow patch / SWALLOW_PATCH
-#XCBLIBS = -lX11-xcb -lxcb -lxcb-res
+XCBLIBS = -lX11-xcb -lxcb -lxcb-res
 
 # This is needed for the winicon and tagpreview patches / BAR_WINICON_PATCH / BAR_TAGPREVIEW_PATCH
 #IMLIB2LIBS = -lImlib2
